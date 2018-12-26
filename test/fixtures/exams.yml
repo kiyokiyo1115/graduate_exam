@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  law: MyString
+  number: 1
+  question: MyText
+  anser: MyText
+
+two:
+  year: 1
+  law: MyString
+  number: 1
+  question: MyText
+  anser: MyText
