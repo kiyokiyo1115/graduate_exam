@@ -11,5 +11,6 @@ ActiveAdmin.register Exam do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :year, :law, :number, :question, :anser
+actions :all, except: [:show]
+permit_params :year, :law, :number, :question, :answer
 end

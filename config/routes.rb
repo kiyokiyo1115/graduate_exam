@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'exams/show'
+  get 'exams/answer'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

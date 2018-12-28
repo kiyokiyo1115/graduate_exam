@@ -1,2 +1,25 @@
-<h1>Exams#show</h1>
-<p>Find me in app/views/exams/show.html.erb</p>
+<h1>過去問を解く</h1>
+<br><br>
+<h3>出題年：<%= @exam.year %>年</h3>
+<br><br>
+<h3>分野名：<%= @exam.law %></h3>
+<br><br>
+<h3>問題：</h3>
+<h3><%= @exam.question %></h3>          
+<br><br>
+          
+<div id="output"></div>
+<br><br>
+<script language="javascript" type="text/javascript">
+  function OnButtonClick() {
+    target = document.getElementById("output");
+    target.innerHTML = "<h3>解答：</h3><h3><%= @exam.answer %></h3>";
+  }
+  
+</script>
+<input type="button" value="解答を見る" onclick="OnButtonClick();"/><br />
+<br />
+
+
+
+          
