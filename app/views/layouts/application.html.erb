@@ -7,8 +7,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+  
+  <body topmargin="0">
+    <header>
+      <ul>
+        <li><a href="/">ホーム</a></li>
+        <li><a href="/users/show">マイページ</a></li>
+        <li><a href="/exams/show">過去問出題</a></li>
+      </ul>
+    </header>
+    
+    <% if user_signed_in? %>
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+      <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+    <% end %>
     <%= yield %>
+    <footer>
+      <p>DIVE INTO CODE　2018年８月期　K.Sato</p>
+    </footer>
   </body>
 </html>
