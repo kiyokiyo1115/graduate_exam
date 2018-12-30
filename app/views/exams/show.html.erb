@@ -1,4 +1,4 @@
-<h1>過去問を解く</h1>
+<h1>過去問出題</h1>
 <br><br>
 <h3>出題年：<%= @exam.year %>年</h3>
 <br><br>
@@ -19,6 +19,11 @@
 </script>
 <input type="button" value="解答を見る" onclick="OnButtonClick();"/><br />
 <br />
+
+<div class= "margin">
+  <input type="button" onclick="location.href='/exams/show'"value="次の問題へ">
+</div>
+
 
 
 
