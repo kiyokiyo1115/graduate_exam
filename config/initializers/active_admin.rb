@@ -166,7 +166,7 @@ ActiveAdmin.setup do |config|
   # Add tags to all pages logged in users see:
   #   config.meta_tags = { author: 'My Company' }
 
-  # By default, sign up/sign in/recover password pages are excluded
+  # By default, 新規登録/sign in/recover password pages are excluded
   # from showing up in search engine results by adding a robots meta
   # tag. You can reset the hash of meta tags included in logged out
   # pages:
