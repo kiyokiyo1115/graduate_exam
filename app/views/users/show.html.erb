@@ -2,7 +2,7 @@
 
 <p>メールアドレス: <%= @user.email %></p>
 
-<%= link_to "不正解問題一覧へ", review_user_path(@user.id) %>
+<%= button_to "不正解問題一覧へ", review_user_path(@user.id) %>
 <% if user_signed_in? %>
     <%= link_to "編集", edit_user_registration_path %> 
 <% end %>

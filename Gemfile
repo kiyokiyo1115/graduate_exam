@@ -36,6 +36,7 @@ gem 'activeadmin'
 gem 'devise'
 gem "jquery-rails"
 gem 'active_admin_import'
+gem 'rails-i18n'
 
 
 
