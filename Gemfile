@@ -37,6 +37,8 @@ gem 'devise'
 gem "jquery-rails"
 gem 'active_admin_import'
 gem 'rails-i18n'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 
 

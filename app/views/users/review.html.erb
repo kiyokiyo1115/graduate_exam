@@ -20,3 +20,5 @@
 <div class= "margin">
 <input type="button" onclick="location.href='/'"value="トップページ">
 </div>
+
+<%= link_to 'PDF出力', review_user_path(@user, format: :pdf), class: %i[btn btn-default], target: '_blank' %>

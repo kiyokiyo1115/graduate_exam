@@ -3,9 +3,9 @@
 <p>メールアドレス: <%= @user.email %></p>
 
 <% if user_signed_in? %>
-    <%= button_to "編集", edit_user_registration_path %> <br />
-<% end %>
-<%= button_to "不正解問題一覧", review_user_path(@user.id) %><br />
+  <input type="button" onclick="location.href='/users/edit'"value="編集"><br />
+<% end %><br />
+  <%= button_to "不正解問題一覧", review_user_path(@user.id) %><br />
 
   
 
