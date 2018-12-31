@@ -19,14 +19,12 @@
 </script>
 <input type="button" value="解答を見る" onclick="OnButtonClick();"/><br />
 <br />
-
-  <div class= "margin col-md-9 col-xs-12">  
+ 
     <% if @review.present? %>
-      <%= link_to '不正解問題から削除する', review_path(id: @review.id), method: :delete, class: 'btn btn-danger' %>
+      <%= button_to '不正解問題から削除する', review_path(id: @review.id), method: :delete, class: 'btn btn-danger' %><br />
     <% else %>
-      <%= link_to '不正解問題に登録する', reviews_path(exam_id: @exam.id), method: :post, class: 'btn btn-primary' %>
+      <%= button_to '不正解問題に登録する', reviews_path(exam_id: @exam.id), method: :post, class: 'btn btn-primary' %><br />
     <% end %>
-  </div>
 
 <div class= "margin">
   <input type="button" onclick="location.href='/exams/show'"value="次の問題へ">

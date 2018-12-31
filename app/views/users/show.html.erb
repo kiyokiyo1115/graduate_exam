@@ -2,14 +2,15 @@
 
 <p>メールアドレス: <%= @user.email %></p>
 
-<%= button_to "不正解問題一覧へ", review_user_path(@user.id) %>
 <% if user_signed_in? %>
-    <%= link_to "編集", edit_user_registration_path %> 
+    <%= button_to "編集", edit_user_registration_path %> <br />
 <% end %>
+<%= button_to "不正解問題一覧", review_user_path(@user.id) %><br />
+
   
 
 
 
 <div class= "margin">
-  <a href="/" class="btn btn-default btn-sm" role="button">トップページへ</a>
+  <input type="button" onclick="location.href='/'"value="トップページ">
 </div>
