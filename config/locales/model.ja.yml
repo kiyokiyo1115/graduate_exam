@@ -3,6 +3,7 @@ ja:
     models:
       exam: "過去問"
       user: "ユーザー"
+      admin_user: "管理者"
     attributes:
       user:
         title: "タイトル"
