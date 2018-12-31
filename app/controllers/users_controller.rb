@@ -8,16 +8,15 @@ class UsersController < ApplicationController
   end
 
   def review
-    @user = User.find(params[:id])
-    @reviews_exams = @user.reviews
     respond_to do |format|
       format.html
       format.pdf do
-        render pdf: 'result',
-        layout: 'pdf_layouts.html',
-        template: 'users/:id/review',
+        render pdf: "review",
+        layout: 'pdf.html',
         encording: 'UTF-8'
       end
     end
+    @user = User.find(params[:id])
+    @reviews_exams = @user.reviews
   end
 end
