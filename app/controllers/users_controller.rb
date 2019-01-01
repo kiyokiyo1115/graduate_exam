@@ -13,7 +13,8 @@ class UsersController < ApplicationController
       format.pdf do
         render pdf: "review",
         layout: 'pdf.html',
-        encording: 'UTF-8'
+        encording: 'UTF-8',
+        orientation: 'Landscape'
       end
     end
     @user = User.find(params[:id])
