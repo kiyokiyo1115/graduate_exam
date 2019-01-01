@@ -1,25 +1,19 @@
 <h1>不正解問題一覧</h1>
 
 <table>
-<tr>
-  <th>出題年度</th>
-  <th> </th>
-  <th>分野名</th>
-  <th></th>
-  <th>問題</th>
-  <th></th>
-  <th>解答</th>
-</tr>
-  <% @user = User.find(params[:id]) %>
-  <% @user.review_exams.each do |exam| %>
-    <tr>
-      <td><%= exam.year %></td>
-      <td> </td>
-      <td><%= exam.law %></td>
-      <td></td>
-      <td><%= exam.question %></td>
-      <td></td>
-      <td><%= exam.answer %></td>
-    </tr>
-  <% end %>
+  <tr>
+    <th>出題年度</th>
+    <th>分野名</th>
+    <th>問題</th>
+    <th>解答</th>
+  </tr>
+    <% @user = User.find(params[:id]) %>
+    <% @user.review_exams.each do |exam| %>
+  <tr>
+    <td><%= exam.year %></td>
+    <td><%= exam.law %></td>
+    <td><%= exam.question %></td>
+    <td><%= exam.answer %></td>
+  </tr>
+    <% end %>
 </table>
