@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Graduate Exam"
+  config.site_title = "海事代理士試験口述試験対策アプリ"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -237,7 +237,11 @@ ActiveAdmin.setup do |config|
   #
   # To disable/customize for the :admin namespace:
   #
-  #   config.namespace :admin do |admin|
+     config.namespace :admin do |admin|
+      admin.build_menu do |menu|
+        menu.add label: "トップページ", url: "/", priority: 0
+      end
+    end
   #
   #     # Disable the links entirely
   #     admin.download_links = false
