@@ -239,7 +239,7 @@ ActiveAdmin.setup do |config|
   #
      config.namespace :admin do |admin|
       admin.build_menu do |menu|
-        menu.add label: "トップページ", url: "/", priority: 0
+        menu.add label: "ホーム", url: "/", priority: 0
       end
     end
   #

@@ -16,6 +16,10 @@
         <li><a href="/admin">管理者用ページ</a></li>
       </ul>
     </header>
+
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "#{key}") %>
+    <% end %>
     
     <% if user_signed_in? %>
     　<%= link_to "マイページ", user_path(current_user.id) %>
