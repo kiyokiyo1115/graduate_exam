@@ -31,4 +31,6 @@ ja:
         reset_password_sent_at: "リセットパスワード送付時刻"
         remember_created_at: 再設定時刻
         id: "ID"
+        password: "パスワード"
+        password_confirmation: "確認用パスワード"
         
