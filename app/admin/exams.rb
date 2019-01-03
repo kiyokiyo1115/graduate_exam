@@ -11,6 +11,7 @@ ActiveAdmin.register Exam do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+remove_filter :reviews, :review_users 
 actions :all, except: [:show]
 permit_params :year, :law, :number, :question, :answer
 active_admin_import validate: true, batch_transaction: true, template_object: ActiveAdminImport::Model.new(
