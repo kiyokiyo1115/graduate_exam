@@ -26,9 +26,9 @@
 <br />
  
     <% if @review.present? %>
-      <%= button_to '不正解問題から削除する', review_path(id: @review.id), method: :delete, class: 'btn btn-danger' %><br />
+      <%= button_to '不正解問題から削除する', review_path(id: @review.id), method: :delete, class: 'btn btn-danger', data: { disable_with: "削除中..." }  %><br />
     <% else %>
-      <%= button_to '不正解問題に登録する', reviews_path(exam_id: @exam.id), method: :post, class: 'btn btn-primary' %><br />
+      <%= button_to '不正解問題に登録する', reviews_path(exam_id: @exam.id), method: :post, class: 'btn btn-primary', data: { disable_with: "登録中..." } %><br />
     <% end %>
 
 <div class= "margin">
