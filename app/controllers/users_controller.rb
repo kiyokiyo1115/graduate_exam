@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     @reviews_exams = @user.reviews
   end
   
-private
+  private
 
   def set_user
     @user = User.find(params[:id])
