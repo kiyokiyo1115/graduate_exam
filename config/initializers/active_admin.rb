@@ -237,11 +237,11 @@ ActiveAdmin.setup do |config|
   #
   # To disable/customize for the :admin namespace:
   #
-     config.namespace :admin do |admin|
-      admin.build_menu do |menu|
-        menu.add label: "ホーム", url: "/", priority: 0
-      end
+  config.namespace :admin do |admin|
+    admin.build_menu do |menu|
+      menu.add label: "ホーム", url: "/", priority: 0
     end
+  end
   #
   #     # Disable the links entirely
   #     admin.download_links = false

@@ -6,4 +6,4 @@ ActiveAdmin::Devise::SessionsController.class_eval do
         users_root_path
       end
     end
-  end
+end
