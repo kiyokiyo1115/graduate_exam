@@ -1,24 +1,25 @@
 <h1>不正解問題一覧</h1>
 
 <table>
-<tr>
-  <th>出題年度</th>
-  <th>分野名</th>
-  <th>問題</th>
-  <th>解答</th>
-</tr>
+  <tr>
+    <th>出題年度</th>
+    <th>分野名</th>
+    <th>問題</th>
+    <th>解答</th>
+  </tr>
   <% @user.review_exams.each do |exam| %>
-    <tr>
-      <td><%= exam.year %></td>
-      <td><%= exam.law %></td>
-      <td><%= exam.question %></td>
-      <td><%= exam.answer %></td>
-    </tr>
+  <tr>
+    <td><%= exam.year %></td>
+    <td><%= exam.law %></td>
+    <td><%= exam.question %></td>
+    <td><%= exam.answer %></td>
+  </tr>
   <% end %>
 </table>
 
 <input type="button" onclick="location.href='/'"value="ホーム"><br />
 <br />
+
 <div class= "margin">
   <%= button_to 'PDF出力', review_user_path(@user, format: :pdf), class: %i[btn btn-default], target: '_blank' %>
 </div>
