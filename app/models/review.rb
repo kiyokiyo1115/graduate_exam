@@ -1,4 +1,4 @@
 class Review < ApplicationRecord
-    belongs_to :user
-    belongs_to :exam
+  belongs_to :user
+  belongs_to :exam
 end
